@@ -1,7 +1,7 @@
 # Antifragile-Progress
 
 **Less complexity → More momentum.**  
-A lean framework to help you make steady progress on ideas, projects and initiatives by avoiding overthinking and over-engineering.
+A lean framework to help you make steady progress on ideas, projects, and initiatives by avoiding overthinking and over-engineering.
 
 ---
 
@@ -9,58 +9,69 @@ A lean framework to help you make steady progress on ideas, projects and initiat
 - Turn fuzzy ideas into **clear, lean moves**.  
 - Escape traps of **future-problem-solving**.  
 - Protect energy and **unlock momentum**.  
-- Build progress that grows stronger under stress which is what I call *antifragile progress*.  
+- Build progress that grows stronger under stress — *antifragile progress*.  
 
 ---
 
 ## Quick start
-1. Read [`FRAMEWORK.md`](./FRAMEWORK.md) for the Core Checks.  
-2. Use the GitHub Issue template under `.github/ISSUE_TEMPLATE/` to run a check.  
-3. Decide: **Proceed Lean**, **Simplify**, **Park**, or **Kill** (rare).  
-4. If “Proceed,” commit to a **one-day test** that proves adoption/impact.
+1. Read [`FRAMEWORK.md`](./FRAMEWORK.md) for the 5 Checks and outcomes.  
+2. Check the [Releases](./releases) for ready-to-use versions of the framework.  
+3. (Optional) Load the framework into an AI by exploring the [`ai/`](./ai/) folder.  
 
 ---
 
-## Using with CustomGPT
+## Using with CustomGPT (AntifragileProgressGPT)
 
-- **Instructions (System Prompt):**  
-  Copy from [`customgpt/INSTRUCTIONS.md`](./customgpt/INSTRUCTIONS.md).  
+**Instructions (System Prompt):**  
+Copy from [`customgpt/INSTRUCTIONS.md`](./customgpt/INSTRUCTIONS.md). This is the single source of truth for the prompt.
 
-- **Knowledge upload:**  
-  Use the files listed in [`customgpt/knowledge/MANIFEST.txt`](./customgpt/knowledge/MANIFEST.txt).  
-  By default this includes:  
-  - [`FRAMEWORK.md`](./FRAMEWORK.md)  
-  - [`templates/checklist.md`](./templates/checklist.md)  
+**Knowledge upload (files to upload in the CustomGPT UI):**  
+1) Generate the knowledge files from the GPT-specific folder:  
+   ```bash
+   cd ai/openai/antifragile-progress-gpt/
+   ./build-knowledge.sh -z
+   ```
+2) This will populate `ai/openai/antifragile-progress-gpt/knowledge-files/` with:
+   - `FRAMEWORK.md` (copied from repo root; **upload this** to CustomGPT → Knowledge)
+   - `MANIFEST.txt` (dev builds) or `MANIFEST-<version>.txt` (on releases; **informational only**)
+   - `knowledge-upload-<...>.zip` (optional convenience bundle)
 
-- **Conversation Starters & Description:**  
-  Provided in the [`customgpt/`](./customgpt/) folder.
+**Important paths:**  
+- Scripts live in: `ai/openai/antifragile-progress-gpt/`  
+- Output lives in: `ai/openai/antifragile-progress-gpt/knowledge-files/`  
+- A placeholder `MANIFEST.md` is version-controlled in that folder so it isn’t empty; build outputs are gitignored.
+
+**Conversation Starters & Description:**  
+Provided in the [`customgpt/`](./customgpt/) folder (`STARTERS.md`, `DESCRIPTION.md`).
 
 ---
 
 ## Releasing
 
-Releases are managed with [`make-release.sh`](./make-release.sh).
+Releases are managed with [`make-release.sh`](./make-release.sh). This will also build a **versioned Knowledge bundle** for the GPT.
 
 - **Preview release notes:**  
   ```bash
-  ./make-release.sh --preview v0.3.0
+  ./make-release.sh --preview v1.0.0
   ```
 
 - **Tag & publish release:**  
   ```bash
-  ./make-release.sh v0.3.0
+  ./make-release.sh v1.0.0
   ```
 
 - **Force retag if needed:**  
   ```bash
-  ./make-release.sh --force v0.3.0
+  ./make-release.sh --force v1.0.0
   ```
 
-Each release automatically builds the **CustomGPT knowledge bundle** under:
+Each release automatically creates under:
 ```
 ai/openai/antifragile-progress-gpt/knowledge-files/
 ```
-including a timestamped zip for upload.
+- `FRAMEWORK.md` (copied)  
+- `MANIFEST-<version>.txt` (version-stamped)  
+- `knowledge-upload-<version>.zip` (if `zip` is available)
 
 ---
 
