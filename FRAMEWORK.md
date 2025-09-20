@@ -22,7 +22,7 @@ Use it before investing in a feature, product, experiment, process, or initiativ
 - ❌ Kill if it’s hypothetical only.  
 
 ### 2) Momentum
-- If we abandon this tomorrow, who loses progress?  
+- If you abandon this tomorrow, what loses progress?  
 - ✅ Proceed if real momentum is at risk.  
 - ❌ Kill if nothing slows down.  
 
@@ -46,11 +46,11 @@ Use it before investing in a feature, product, experiment, process, or initiativ
 
 ## Decision Outcomes
 
-- **Proceed Lean** → Commit to the one-day test, learn, iterate.  
-- **Simplify** → Reduce scope until the test fits one day.  
-- **Pivot** → Redirect energy to a sharper, more antifragile alternative.  
-- **Seed** → Plant a low-cost seed today for future antifragile rewards.  
-- **Kill** → Rare, only when no real pain, no pivot, and no worthwhile seed exist.  
+- **Proceed Lean**: Commit to the one-day test, learn, iterate.  
+- **Simplify**: Reduce scope until the test fits one day.  
+- **Pivot**: Redirect energy to a sharper, more antifragile alternative.  
+- **Seed**: Plant a low-cost seed today for future antifragile rewards.  
+- **Kill**: Rare, only when no real pain, no pivot, and no worthwhile seed exist.  
 
 ---
 
@@ -58,7 +58,7 @@ Use it before investing in a feature, product, experiment, process, or initiativ
 
 **Idea:** Build an automated reporting dashboard.  
 
-- **Clarity:** What’s the painful report today? Who needs it this week?  
+- **Clarity:** What’s painful in the current report today? Who needs it this week?  
 - **Momentum:** If stopped, who slows down?  
 - **Scope:** Which 3 people benefit now?  
 - **Lean Test:** Send a one-page manual report first. Measure replies.  
@@ -70,9 +70,9 @@ Use it before investing in a feature, product, experiment, process, or initiativ
 
 ## Changelog
 
-- **v0.1 (beginning)** → 4 Checks (Clarity, Momentum, Scope, Lean Test). Outcomes: Proceed Lean, Simplify, Park, Kill.  
-- **v0.2 (iteration)** → Added Antifragile Seed as a 5th Check (rare exception for future momentum).  
-- **v1.0 (current)** → Reframed outcomes:  
+- **v0.1 (beginning)**: 4 Checks (Clarity, Momentum, Scope, Lean Test). Outcomes: Proceed Lean, Simplify, Park, Kill.  
+- **v0.2 (iteration)**: Added Antifragile Seed as a 5th Check (rare exception for future momentum).  
+- **v1.0 (current)**: Reframed outcomes:  
   - *Park* replaced with **Pivot** (redirect energy instead of backlog graveyard).  
   - *Seed* formalized as its own outcome, not just an exception.  
   - Outcomes are now all verbs: Proceed Lean, Simplify, Pivot, Seed, Kill.  
