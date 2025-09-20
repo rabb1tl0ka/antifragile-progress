@@ -1,6 +1,8 @@
 # Antifragile-Progress
 
-**Less complexity → More momentum.**  
+<img src="./assets/logo.png" alt="Antifragile-Progress Logo" width="300"/>
+
+**Less complexity. More momentum.**  
 A lean framework to help you make steady progress on ideas, projects, and initiatives by avoiding overthinking and over-engineering.
 
 ---
