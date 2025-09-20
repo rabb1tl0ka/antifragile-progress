@@ -1,0 +1,4 @@
+# Keep this folder in Git, but ignore generated outputs
+*
+!MANIFEST.md
+!.gitignore
