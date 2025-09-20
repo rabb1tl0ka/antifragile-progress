@@ -1,4 +1,4 @@
-# Antifragile-Progress Framework (v2.0)
+# Antifragile-Progress Framework
 
 A lightweight decision guardrail to **sharpen ideas** and **unlock momentum**.  
 Use it before investing in a feature, product, experiment, process, or initiative.
@@ -44,7 +44,7 @@ Use it before investing in a feature, product, experiment, process, or initiativ
 
 ---
 
-## Decision Outcomes (v2.0)
+## Decision Outcomes
 
 - **Proceed Lean** → Commit to the one-day test, learn, iterate.  
 - **Simplify** → Reduce scope until the test fits one day.  
@@ -70,9 +70,9 @@ Use it before investing in a feature, product, experiment, process, or initiativ
 
 ## Changelog
 
-- **v1.0 (original)** → 4 Checks (Clarity, Momentum, Scope, Lean Test). Outcomes: Proceed Lean, Simplify, Park, Kill.  
-- **v1.1** → Added Antifragile Seed as a 5th Check (rare exception for future momentum).  
-- **v2.0 (current)** → Reframed outcomes:  
+- **v0.1 (beginning)** → 4 Checks (Clarity, Momentum, Scope, Lean Test). Outcomes: Proceed Lean, Simplify, Park, Kill.  
+- **v0.2 (iteration)** → Added Antifragile Seed as a 5th Check (rare exception for future momentum).  
+- **v1.0 (current)** → Reframed outcomes:  
   - *Park* replaced with **Pivot** (redirect energy instead of backlog graveyard).  
   - *Seed* formalized as its own outcome, not just an exception.  
   - Outcomes are now all verbs: Proceed Lean, Simplify, Pivot, Seed, Kill.  
