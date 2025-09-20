@@ -1,0 +1,60 @@
+name: Antifragile-Progress Check
+description: Sharpen the idea and commit to a one-day test
+title: "AP: <short name of idea>"
+labels: ["antifragile-progress"]
+body:
+  - type: input
+    id: owner
+    attributes:
+      label: Owner
+      placeholder: "your-handle"
+  - type: textarea
+    id: context
+    attributes:
+      label: Context (3 sentences max)
+      placeholder: "What’s the idea and why now?"
+  - type: textarea
+    id: clarity
+    attributes:
+      label: 1) Clarity (Pain)
+      placeholder: "What current pain does this solve? Who feels it?"
+  - type: dropdown
+    id: clarity_verdict
+    attributes:
+      label: Clarity verdict
+      options: ["✅ Real pain", "❌ Hypothetical"]
+  - type: textarea
+    id: momentum
+    attributes:
+      label: 2) Momentum
+      placeholder: "If abandoned tomorrow, who loses momentum?"
+  - type: dropdown
+    id: momentum_verdict
+    attributes:
+      label: Momentum verdict
+      options: ["✅ At risk", "❌ No loss"]
+  - type: textarea
+    id: scope
+    attributes:
+      label: 3) Scope & Audience
+      placeholder: "Who benefits this week and why?"
+  - type: dropdown
+    id: scope_verdict
+    attributes:
+      label: Scope verdict
+      options: ["✅ Clear", "❌ Unclear"]
+  - type: textarea
+    id: lean_test
+    attributes:
+      label: 4) Lean Test (one-day)
+      placeholder: "Define the one-day adoption/impact test + metric(s)"
+  - type: dropdown
+    id: decision
+    attributes:
+      label: Decision
+      options: ["Proceed Lean", "Simplify", "Park", "Kill"]
+  - type: textarea
+    id: commit
+    attributes:
+      label: If Proceed — commit to the one-day test
+      placeholder: "Link follow-up issue / checklist"

@@ -1,0 +1,5 @@
+- Help me simplify this new feature idea before I pitch it to my team.
+- I’m overthinking a side project — walk me through the 4 Checks.
+- I want to start a new initiative at work, but not sure if it’s worth it.
+- What’s the leanest one-day test for this startup idea?
+- If I park this idea, how do I make sure I don’t lose momentum?

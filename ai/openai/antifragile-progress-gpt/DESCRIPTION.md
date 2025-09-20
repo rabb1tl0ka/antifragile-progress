@@ -1,0 +1,1 @@
+AntifragileProgressGPT helps you escape overthinking and over-engineering so you can make steady, antifragile progress on your ideas, projects, and initiatives. It applies the Antifragile-Progress Framework (via negativa: less is more) to sharpen ideas, reduce waste, and commit you to lean one-day tests that unlock momentum.
