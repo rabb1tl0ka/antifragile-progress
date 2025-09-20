@@ -16,13 +16,12 @@ A lean framework to help you make steady progress on ideas, projects, and initia
 ---
 
 ## Quick start
-1. Read [`FRAMEWORK.md`](./FRAMEWORK.md) for the 5 Checks and outcomes.  
-2. Check the [Releases](./releases) for ready-to-use versions of the framework.  
-3. (Optional) Load the framework into an AI by exploring the [`ai/`](./ai/) folder.  
+1. **Manual** - Read [`FRAMEWORK.md`](./FRAMEWORK.md) and run the Framework Checks against your idea, project or initiative.  
+2. **AI** - Use [AntifragileProgressGPT](https://chatgpt.com/g/g-68cea04ba6a08191a8a6a64af139bd58-antifragileprogressgpt)
 
 ---
 
-## Using with CustomGPT (AntifragileProgressGPT)
+## Customizing your own CustomGPT
 
 **Instructions (System Prompt):**  
 Copy from [`customgpt/INSTRUCTIONS.md`](./customgpt/INSTRUCTIONS.md). This is the single source of truth for the prompt.
@@ -45,35 +44,6 @@ Copy from [`customgpt/INSTRUCTIONS.md`](./customgpt/INSTRUCTIONS.md). This is th
 
 **Conversation Starters & Description:**  
 Provided in the [`customgpt/`](./customgpt/) folder (`STARTERS.md`, `DESCRIPTION.md`).
-
----
-
-## Releasing
-
-Releases are managed with [`make-release.sh`](./make-release.sh). This will also build a **versioned Knowledge bundle** for the GPT.
-
-- **Preview release notes:**  
-  ```bash
-  ./make-release.sh --preview v1.0.0
-  ```
-
-- **Tag & publish release:**  
-  ```bash
-  ./make-release.sh v1.0.0
-  ```
-
-- **Force retag if needed:**  
-  ```bash
-  ./make-release.sh --force v1.0.0
-  ```
-
-Each release automatically creates under:
-```
-ai/openai/antifragile-progress-gpt/knowledge-files/
-```
-- `FRAMEWORK.md` (copied)  
-- `MANIFEST-<version>.txt` (version-stamped)  
-- `knowledge-upload-<version>.zip` (if `zip` is available)
 
 ---
 
